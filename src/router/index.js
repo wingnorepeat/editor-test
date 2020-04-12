@@ -88,6 +88,19 @@ export const constantRoutes = [
         meta: { title: 'Form', icon: 'form' }
       }
     ]
+  },
+
+  {
+    path: '/auto-process',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'autoProcess',
+        component: () => import('@/views/auto-process/index'),
+        meta: { title: 'auto-process', icon: 'form' }
+      }
+    ]
   }
 ]
 
